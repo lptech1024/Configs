@@ -1,0 +1,9 @@
+[user]
+  email = $email
+  signingkey = $key
+[commit]
+  gpgsign = true
+[gpg]
+  program = gpg2
+[init]
+  templatedir = ~/.git_template
