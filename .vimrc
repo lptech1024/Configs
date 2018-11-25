@@ -10,11 +10,16 @@ Plugin 'VundleVim/Vundle.vim'
 " Paired surrounding
 Plugin 'tpope/vim-surround'
 
+" Prefer distribution package
 " toggle comments with gc$count
-Plugin 'tpope/vim-commentary'
+"Plugin 'tpope/vim-commentary'
 
 " Make vim-surround and vim-commentary work with '.'
 Plugin 'tpope/vim-repeat'
+
+" Prefer distribution package
+" Git integration
+"Plugin 'tpope/vim-fugitive'
 
 " Live git diff
 Plugin 'airblade/vim-gitgutter'
