@@ -30,6 +30,9 @@ Plugin 'itchyny/lightline.vim'
 call vundle#end()
 filetype plugin indent on
 
+" Default is 4000 ms
+set updatetime=100
+
 " Display line numbers
 set number relativenumber
 
