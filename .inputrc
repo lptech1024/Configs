@@ -2,3 +2,6 @@ set editing-mode vi
 set completion-ignore-case on
 set show-all-if-ambiguous on
 set completion-map-case on
+
+"\C-p":history-search-backward
+"\C-n":history-search-forward
