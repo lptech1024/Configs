@@ -36,8 +36,8 @@ set updatetime=100
 " Display line numbers
 set number relativenumber
 
-" \t maps to 2 spaces
-set tabstop=2
+" \t maps to 3 spaces
+set tabstop=3
 
 " Visual < and > uses tabstop setting
 set shiftwidth=0
@@ -54,4 +54,4 @@ set dictionary+=/usr/share/dict/words
 set listchars=trail:@,tab:>-,extends:>,precedes:<
 set list
 
-autocmd FileType c setlocal commentstring=//\ %s
+autocmd FileType c setlocal commentstring=//%s
