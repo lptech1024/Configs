@@ -30,7 +30,7 @@
     "no-unused-vars": 0,
     "semi": 1,
     "semi-spacing": 1,
-    "valid-jsdoc": [ 2, { "requireReturn": false } ],
+    "valid-jsdoc": [2, { "requireReturn": false }],
 
     "import/extensions": 1,
 
