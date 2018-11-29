@@ -42,6 +42,10 @@ set tabstop=3
 " Visual < and > uses tabstop setting
 set shiftwidth=0
 
+" Reduce key code/mapped key sequence timeout. Fixes noticable lag when Esc, then "O"
+" May cause issues over slow networks
+set ttimeoutlen=100
+
 " Search into subfolders
 " Allows tab-completion for all file-related tasks
 set path +=**
