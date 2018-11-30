@@ -60,3 +60,6 @@ set list
 
 " Add '//' to the first non-whitespace character
 autocmd FileType c,cpp,cs,java let b:commentary_format='//%s'
+
+" Add '"' to the first-non-whitespace character
+autocmd Bufread,BufNewFile .vimrc let b:commentary_format='"%s'
