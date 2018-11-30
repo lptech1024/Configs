@@ -76,6 +76,10 @@ set dictionary+=/usr/share/dict/words
 set listchars=trail:@,tab:>-,extends:>,precedes:<
 set list
 
+" When opening a new line and no filetype-specific indenting is enabled, keep
+" the same indent as the line you're currently on
+set autoindent
+
 " Prepend '//' to the first non-whitespace character
 autocmd FileType c,cpp,cs,java let b:commentary_format='//%s'
 
