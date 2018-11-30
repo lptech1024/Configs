@@ -51,6 +51,8 @@ set notimeout ttimeout ttimeoutlen=100
 
 set number relativenumber
 
+set wrap
+
 " \t maps to 3 spaces
 set tabstop=3
 
