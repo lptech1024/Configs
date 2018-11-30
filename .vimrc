@@ -7,6 +7,10 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+" Currently using plain ctags
+" Code completion
+"Plugin 'Valloric/YouCompleteMe'
+
 " Paired surrounding
 Plugin 'tpope/vim-surround'
 
@@ -19,7 +23,7 @@ Plugin 'tpope/vim-repeat'
 
 " Prefer distribution package
 " Git integration
-"Plugin 'tpope/vim-fugitive'
+"Plugin 'tpope/vim-fugitivie'
 
 " Live git diff
 Plugin 'airblade/vim-gitgutter'
@@ -30,10 +34,21 @@ Plugin 'itchyny/lightline.vim'
 call vundle#end()
 filetype plugin indent on
 
-" Default is 4000 ms
+"let g:ycm_collect_identifiers_from_tags_files = 1
+
+" Enable syntax highlighting
+syntax on
+
+" Highlight searches
+set hlsearch
+
+" gitgutter response time
 set updatetime=100
 
-" Display line numbers
+" Never time out on mappings, but don't wait long for keycodes
+" May cause issues over slow networks
+set notimeout ttimeout ttimeoutlen=100
+
 set number relativenumber
 
 " \t maps to 3 spaces
@@ -42,10 +57,6 @@ set tabstop=3
 " Visual < and > uses tabstop setting
 set shiftwidth=0
 
-" Reduce key code/mapped key sequence timeout. Fixes noticable lag when Esc, then "O"
-" May cause issues over slow networks
-set ttimeoutlen=100
-
 " Search into subfolders
 " Allows tab-completion for all file-related tasks
 set path +=**
@@ -53,13 +64,20 @@ set path +=**
 " Display all matching files when we tab complete
 set wildmenu
 
+" Use case insensitive search, except when using capital letters
+set ignorecase
+set smartcase
+
+" Always display the status line, even if only one window is displayed
+set laststatus=2
+
 set dictionary+=/usr/share/dict/words
 
 set listchars=trail:@,tab:>-,extends:>,precedes:<
 set list
 
-" Add '//' to the first non-whitespace character
+" Prepend '//' to the first non-whitespace character
 autocmd FileType c,cpp,cs,java let b:commentary_format='//%s'
 
-" Add '"' to the first-non-whitespace character
+" Prepend '"' to the first-non-whitespace character
 autocmd Bufread,BufNewFile .vimrc let b:commentary_format='"%s'
