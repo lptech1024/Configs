@@ -73,6 +73,10 @@ set smartcase
 " Always display the status line, even if only one window is displayed
 set laststatus=2
 
+" Superceeded by lightline (?)
+" Shows line and column number of cursor
+"set ruler
+
 set dictionary+=/usr/share/dict/words
 
 set listchars=trail:@,tab:>-,extends:>,precedes:<
