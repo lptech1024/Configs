@@ -58,4 +58,5 @@ set dictionary+=/usr/share/dict/words
 set listchars=trail:@,tab:>-,extends:>,precedes:<
 set list
 
-autocmd FileType c setlocal commentstring=//%s
+" Add '//' to the first non-whitespace character
+autocmd FileType c,cpp,cs,java let b:commentary_format='//%s'
