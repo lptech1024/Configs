@@ -86,6 +86,8 @@ set list
 " the same indent as the line you're currently on
 set autoindent
 
+autocmd BufNewFile,BufRead *.h set syntax=c
+
 " Prepend '//' to the first non-whitespace character
 autocmd FileType c,cpp,cs,java let b:commentary_format='//%s'
 
