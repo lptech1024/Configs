@@ -90,4 +90,4 @@ set autoindent
 autocmd FileType c,cpp,cs,java let b:commentary_format='//%s'
 
 " Prepend '"' to the first-non-whitespace character
-autocmd Bufread,BufNewFile .vimrc let b:commentary_format='"%s'
+autocmd BufRead,BufNewFile .vimrc let b:commentary_format='"%s'
