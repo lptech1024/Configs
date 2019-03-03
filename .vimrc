@@ -86,6 +86,12 @@ set list
 " the same indent as the line you're currently on
 set autoindent
 
+" Avoid ^w for window navigation
+noremap <C-j> <C-w><C-j>
+noremap <C-k> <C-w><C-k>
+noremap <C-h> <C-w><C-h>
+noremap <C-l> <C-w><C-l>
+
 autocmd BufNewFile,BufRead *.h setlocal filetype=c
 
 " Prepend '//' to the first non-whitespace character
