@@ -100,5 +100,7 @@ autocmd FileType c,cpp,cs,java let b:commentary_format='//%s'
 " Prepend '"' to the first-non-whitespace character
 autocmd BufRead,BufNewFile .vimrc let b:commentary_format='"%s'
 
-" Shortcut for global find and replace. Run from high-level project directories
-map <F2> :arg **/*.* \| argdo %s/\<\>//gceI \| update \| %bdelete<S-Left><S-Left><S-Left><S-Left><S-Left><Right><Right><Right><Right><Right>
+" Reindex ctags and cscope
+map <F5> :!cscope -Rb<CR>:!~/.git_template/hooks/ctags<CR>:cs reset<CR><CR>
+
+set nocscopeverbose
