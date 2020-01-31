@@ -1,5 +1,5 @@
 set nocompatible
-filetype off 
+filetype off
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/vim/bundle/Vundle.vim
@@ -23,7 +23,7 @@ Plugin 'tpope/vim-repeat'
 
 " Prefer distribution package
 " Git integration
-"Plugin 'tpope/vim-fugitivie'
+"Plugin 'tpope/vim-fugitive'
 
 " Live git diff
 Plugin 'airblade/vim-gitgutter'
