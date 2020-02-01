@@ -101,6 +101,6 @@ autocmd FileType c,cpp,cs,java let b:commentary_format='//%s'
 autocmd BufRead,BufNewFile .vimrc let b:commentary_format='"%s'
 
 " Reindex ctags and cscope
-map <F5> :!cscope -Rb<CR>:!~/.git_template/hooks/ctags<CR>:cs reset<CR><CR>
+map <F5> :!~/.git_template/hooks/ctags &<CR>:!cscope -Rb<CR>:cs reset<CR><CR>
 
 set nocscopeverbose
