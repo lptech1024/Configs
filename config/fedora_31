@@ -1,0 +1,39 @@
+*Basic*
+vim-enhanced
+vim-commentary
+vim-fugitive
+vim-gitgutter
+cpupower
+gnome-tweaks
+keepassxc
+ffmpegthumbnailer (rpmfusion free)
+gstreamer1-libav (rpmfusion free)
+
+Backup Software
+
+ffmpeg (rpmfusion free)
+
+Steam (rpmfusion)
+
+*Editing*
+DisplayCAL
+Darktable
+reaper
+Olive (rpmfusion free)
+
+*C Development*
+make
+cmake
+clang
+global
+rpm-build
+rpmlint
+
+	*ImageCrypt*
+	openssl-devel
+	lsb_release
+
+*Firefox*
+Facebook Container
+uBlock Origin
+HTTPS Everywhere
