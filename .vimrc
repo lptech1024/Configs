@@ -25,8 +25,9 @@ Plugin 'tpope/vim-repeat'
 " Git integration
 "Plugin 'tpope/vim-fugitive'
 
+" Prefer distribution package
 " Live git diff
-Plugin 'airblade/vim-gitgutter'
+"Plugin 'airblade/vim-gitgutter'
 
 " Per-file colored status
 Plugin 'itchyny/lightline.vim'
